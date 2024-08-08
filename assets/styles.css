@@ -1,0 +1,109 @@
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FDF9F5;
+    color: #333;
+}
+
+header {
+    background-color: #FDF9F5;
+    padding: 30px;
+    display: flex;
+
+}
+
+.logo {
+    height: 80px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 20;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: 'Bobby Jones Soft', cursive;
+    font-size: 20px;
+    color: #ff7f50;
+    justify-content: center;
+}
+
+.hero {
+    text-align: center;
+    padding: 20px 300px;
+
+}
+
+
+.subheading {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+    padding: -20px;
+
+}
+
+.learn-more {
+    background-color: #8bc34a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.learn-more:hover {
+    background-color: #7cb342;
+}
+
+.kids-image {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    height: 200px;
+}
+
+.books-image {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    height: 200px;
+}
+
+footer {
+    background-color: #FDF9F5;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+}
+
+.social-media a {
+    margin: 0 10px;
+}
+
+.floating-elements {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: visible;
+}
+
+.floating-elements img {
+    animation: float 5s infinite ease-in-out;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
