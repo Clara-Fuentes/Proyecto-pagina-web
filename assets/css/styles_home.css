@@ -6,7 +6,7 @@
 
 
 body {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-color: #FDF9F5;
     color: #373535;
     line-height: 1.4;
@@ -35,9 +35,11 @@ nav {
     align-items: center;
 }
 
+
+
 .nav-links {
     list-style: none;
-    padding: 20;
+    padding: 20px;
     display: flex;
     gap: 50px;
 
@@ -50,6 +52,11 @@ nav {
     color: #ff7f50;
 
 }
+
+.nav-links a:hover {
+        color: #FFB300;
+    }
+
 
 .gallardetes {
     position: absolute;
@@ -84,7 +91,7 @@ nav {
     font-size: 24px;
     margin-bottom: 10px;
     padding: -20px;
-    color: #454141;
+    color: #A8BF6E;
 
 }
 
