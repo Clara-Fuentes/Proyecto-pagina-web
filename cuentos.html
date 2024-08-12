@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuentos Interactivos - Happy Kids</title>
+    <link rel="stylesheet" href="assets/css/style_cuentos.css">
+</head>
+<body>
+    <header>
+        <div class="header-logo">
+         <a href="index.html"> <img src="imagenes/LOGO SOLO.png" alt="Happy Kids Logo" class="logo"></a> 
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="experimentos.html">Experimentos</a></li>
+                <li><a href="#manualidades">Manualidades</a></li>
+                <li><a href="#emociones">Emociones</a></li>
+                <li><a href="#aprende-ingles">Aprende Inglés</a></li>
+                <li><a href="cuentos.html">Cuentos</a></li>
+            </ul>
+        </nav>
+        <img src="imagenes/elementos-gallardetes.png" alt="gallardetes" class="gallardetes">
+    </header>
+
+    <main>
+        <!-- Sección: ¿Quieres leer un cuento? -->
+        <section id="leer-cuento">
+            <h2>¿Quieres leer un cuento?</h2>
+            <div class="libros-disponibles">
+                <div class="libro" onclick="mostrarCuento('cuento1')">
+                    <h3>El Cuento</h3>
+                    <p>Descripción corta del cuento 1</p>
+                </div>
+                <div class="libro" onclick="mostrarCuento('cuento2')">
+                    <h3>El Cuento 2</h3>
+                    <p>Descripción corta del cuento 2</p>
+                </div>
+                <div class="libro" onclick="mostrarCuento('cuento3')">
+                    <h3>El Cuento 3</h3>
+                    <p>Descripción corta del cuento 3</p>
+                </div>
+                <div class="libro" onclick="mostrarCuento('cuento4')">
+                    <h3>El Cuento 4</h3>
+                    <p>Descripción corta del cuento 4</p>
+                </div>
+                <div class="libro" onclick="mostrarCuento('cuento5')">
+                    <h3>El Cuento 5</h3>
+                    <p>Descripción corta del cuento 5</p>
+                </div>
+            </div>
+            <div id="mostrar-cuento" class="cuento">
+                <!-- Aquí se mostrará el cuento seleccionado en formato libro -->
+            </div>
+        </section>
+
+        <!-- Sección: ¿Y si escuchamos un cuento? -->
+        <section id="escuchar-cuento">
+            <h2>¿Y si escuchamos un cuento?</h2>
+            <div class="videos-cuentos">
+                <div class="video" onclick="mostrarVideo('video1')">
+                    <h3>Video Cuento 1</h3>
+                    <p>Descripción corta del video 1</p>
+                </div>
+                <div class="video" onclick="mostrarVideo('video2')">
+                    <h3>Video Cuento 2</h3>
+                    <p>Descripción corta del video 2</p>
+                </div>
+                <!-- Puedes agregar más videos aquí -->
+            </div>
+            <div id="mostrar-video" class="video">
+                <!-- Aquí se mostrará el video seleccionado -->
+            </div>
+        </section>
+    </main>
+
+    <script src="script-cuentos.js"></script>
+</body>
+</html>
