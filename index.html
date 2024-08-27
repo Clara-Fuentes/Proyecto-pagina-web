@@ -15,7 +15,7 @@
             <ul class="nav-links">
                 <li><a href="#Emociones">Emociones</a></li>
                 <li><a href="experimentos.html">Experimentos</a></li>
-                <li><a href="#Aprende-ingles">Aprende Inglés</a></li>
+                <li><a href="Ingles.html">Aprende Inglés</a></li>
                 <li><a href="cuentos.html">Cuentos</a></li>
             </ul>
         </nav>
@@ -32,6 +32,14 @@
             <button class="learn-more">Learn more</button>
         </section>
 
+
+        <section id="hoy-aprendemos" style="margin-top: 30px;">
+            <h1>Hoy Aprendemos</h1>
+            <p>¿Sabías que puedes hacer que un huevo flote? ¡Descúbrelo en nuestra sección de experimentos!</p>
+            <a href="experimentos.html" class="boton-personalizado">¡Vamos!</a>
+        </section>
+
+
         <div class="children">
             <img src="imagenes/Elementos-niños.png" alt="Niños" class="children-img">
             <img src="imagenes/elementos-libros.png" alt="Libros" class="libros-img">
@@ -44,6 +52,54 @@
             <img src="imagenes/Estrella tres.png" alt="Estrellita" class="estrella-tres">
 
         </div>
+
+        <div id="mapa-interactivo">
+            <h2>¡Explora el Mundo!</h2>
+            <div class="map-container">
+                <img src="imagenes/mapa-interactivo.jpg" alt="Mapa del Mundo" id="mapa-imagen">
+                <div class="region" id="region-america" data-info="América: Conocida por su diversidad cultural y geográfica, desde los bosques tropicales del Amazonas hasta las praderas del medio oeste.">
+                    <span>América</span>
+                </div>
+                <div class="region" id="region-europa" data-info="Europa: Cuna de antiguas civilizaciones y hogar de muchos monumentos históricos importantes.">
+                    <span>Europa</span>
+                </div>
+                <!-- Faltan otras regiones -->
+            </div>
+            <div id="info-box">
+                <p>Haz clic en una región para aprender algo nuevo.</p>
+            </div>
+        </div>
+       
+
+        <section id="mini-juego" style="text-align:center; margin-top: 50px;">
+            <h2>¡Encuentra la Estrella!</h2>
+            <p>Haz clic en la estrella que está escondida entre los planetas.</p>
+            
+            <div id="juego" style="display: flex; justify-content: center; margin-top: 20px;">
+                <img src="imagenes/planeta uno.jpg" alt="Planeta 1" class="planeta">
+                <img src="imagenes/planet dos.jpg" alt="Planeta 2" class="planeta">
+                <img src="imagenes/planeta tres.jpg" alt="Planeta 3" class="planeta">
+                <img src="imagenes/Estrella uno.png" alt="Estrella" class="estrella" style="display:none;">
+                <img src="imagenes/planeta cuatro.jpg" alt="Planeta 4" class="planeta">
+                <img src="imagenes/planeta cinco.jpg" alt="Planeta 5" class="planeta">
+            </div>
+            
+            <p id="mensaje" style="font-size: 18px; margin-top: 20px;"></p>
+        </section>
+
+    
+
+        <button onclick="playSound()">Haz clic aquí</button>
+
+        <audio id="soundEffect" src="sound.mp3" preload="auto"></audio>
+        
+        <script>
+            function playSound() {
+                document.getElementById('soundEffect').play();
+            }
+        </script> 
+
+        <script src="index.js"></script>
     <footer>
         <p>Contacto: HappyKids@gmail.com</p>
         <p>&copy; 2024 Happy Kids, Todos los derechos reservados.</p>
