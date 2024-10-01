@@ -45,8 +45,6 @@ nav {
     align-items: center;
 }
 
-
-
 .nav-links {
     list-style: none;
     padding: 20px;
@@ -145,6 +143,15 @@ iframe {
 
 .h1-iv1{
     color: #68ACDD;
-    font-family: "Bobby Jones", fantasy;
-    /*font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-family: "Bobby Jones Soft", fantasy;
+}
+
+.footer{
+    color: #68ACDD;
+    font-family: "Bobby Jones Soft", fantasy;
+}
+
+.p1{
+    color: #FD6868;
+    font-family: "Bobby Jones Soft", fantasy;
 }
