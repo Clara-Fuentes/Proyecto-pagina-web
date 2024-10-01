@@ -7,13 +7,13 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #FDF9F5;
+    background-color: #FFF5E1;
     color: #373535;
     line-height: 1.4;
 }
 
 header {
-    background-color: #FDF9F5;
+    background-color: #FFF5E1;
     padding: 30px;
     gap: 80px;
     text-align: center;
@@ -22,6 +22,7 @@ header {
     z-index: 2;
 
 }
+
 
 @keyframes colorChange {
     0% { color: #FF6F61; }
@@ -146,10 +147,30 @@ iframe {
     font-family: "Bobby Jones Soft", fantasy;
 }
 
-.footer{
-    color: #68ACDD;
-    font-family: "Bobby Jones Soft", fantasy;
+footer {
+    text-align: center;
+    padding: 0;
+    position: relative;
+    z-index: 1;    
+
 }
+    
+    .social-icons{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+
+
+    .social-icons {
+    margin: 10px 10px;
+    }
+
+    .social-icons  {
+     display: inline;
+    
+    }
 
 .p1{
     color: #FD6868;
