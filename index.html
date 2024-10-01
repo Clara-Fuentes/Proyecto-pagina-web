@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/styles_home.css">
     <title>Home Happy Kids</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gorditas:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header id="main-header">
     <div class="logo">
     <img src="imagenes/LOGO SOLO.png" alt="Happy Kids Logo" class="logo">
     </div>
@@ -19,73 +22,121 @@
                 <li><a href="cuentos.html">Cuentos</a></li>
             </ul>
         </nav>
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     <img src="imagenes/elementos-gallardetes.png" alt="gallardetes" class="gallardetes">
     </header>
     <main>
-       <div class="intro-section">
+       <div class="intro-section" style="background-image: url( 'imagenes/Background.png'); height: 790px; background-size: cover;">
         <section class="hero">
             <h2>¡Aprender es toda una aventura!</h2>
-            <p>En Happy Kids, hemos creado un espacio donde la diversión y el aprendizaje se unen en un solo lugar. 
-                Aquí, los niños no solo aprenderán inglés jugando, sino que también podrán hacer manualidades creativas y experimentar con ciencia divertida. 
-                Cada sección de nuestra página está diseñada para inspirar curiosidad, creatividad y emoción en los más pequeños.
-                ¡Naveguen con nosotros y descubran todo lo que Happy Kids tiene para ofrecer! ¡Aquí, cada clic es una nueva oportunidad para aprender y disfrutar juntos!</p>
-            <button class="learn-more">Learn more</button>
+            <p>Hi there, en Happy Kids, hemos hecho un lugar especial solo para ti.
+                Aquí puedes aprender inglés jugando, hacer manualidades súper divertidas 
+                y hasta experimentar como un verdadero científico. ¡Cada sección está llena 
+                de sorpresas y aventuras! ¿Listo para descubrir todo lo que tenemos? Cada 
+                 clic es pura diversión, ¡y siempre aprenderás algo nuevo mientras te diviertes!</p>
+            <p id="text-complete" style="display: none;">Pero espera… ¡aún hay más! En Happy Kids no solo jugamos, ¡también viajamos a mundos increíbles! 
+                ¿Te imaginas convertirte en un astronauta mientras aprendes nuevas palabras en inglés? 
+                O tal vez prefieras crear tus propios juguetes y experimentos mágicos. Aquí, 
+                ¡todo es posible! Sigue explorando y prepárate para más aventuras llenas de diversión y aprendizaje. 
+                ¡No olvides compartir tus creaciones con tus amigos!</p>
+            <button id="learn-more">Leer más</button>
         </section>
         </div>
 
 
         <section id="hoy-aprendemos" style="margin-top: 30px;">
-            <h1>Hoy Aprendemos</h1>
+            <div class="niño-leyendo">
+                <img src="imagenes/niño-leyendo-01.png" alt="Niño leyendo">
+            </div>
+            <div class="text-hoyAprendemos">
+            <h1>Aprendamos algo nuevo juntos</h1>
             <p>¿Sabías que puedes hacer que un huevo flote? ¡Descúbrelo en nuestra sección de experimentos!</p>
             <a href="experimentos.html" class="boton-personalizado">¡Vamos!</a>
+            </div>
         </section>
 
-
-        <div class="children">
-            <img src="imagenes/Elementos-niños.png" alt="Niños" class="children-img">
-            <img src="imagenes/elementos-libros.png" alt="Libros" class="libros-img">
-        </div>
-    </main>
-
-        <div class="estrellas-flotantes">
-            <img src="imagenes/Estrella uno.png" alt="Estrellita" class="estrella-uno">
-            <img src="imagenes/Estrella dos.png" alt="Estrellita" class="estrella-dos">
-            <img src="imagenes/Estrella tres.png" alt="Estrellita" class="estrella-tres">
-
-        </div>
-
         <div id="mapa-interactivo">
-            <h2>¡Explora el Mundo!</h2>
+            <h2>Explora con nosotros</h2>
+            <p> Haz click sobre cualquier región del mapa para conocer sobre el mundo.</p>
             <div class="map-container">
                 <img src="imagenes/mapa-interactivo.jpg" alt="Mapa del Mundo" id="mapa-imagen">
+                
+                <!--Regiones definidas-->
+
                 <div class="region" id="region-america" data-info="América: Conocida por su diversidad cultural y geográfica, desde los bosques tropicales del Amazonas hasta las praderas del medio oeste.">
-                    <span>América</span>
+                    <span>América del Sur <h6>América del Sur es el cuarto continente más grande del mundo y alberga países como Brasil, Argentina, Colombia, Chile y Perú. Destaca por su diversidad étnica
+                         y cultural, así como por su impresionante geografía, que incluye la selva amazónica y la cordillera de los Andes.</h6></span>
                 </div>
+
+                <div class="region" id="region-americaNorte" data-info="América: Conocida por su diversidad cultural y geográfica, desde los bosques tropicales del Amazonas hasta las praderas del medio oeste.">
+                    <span>América del Norte <h6>América del Norte es un continente que incluye países como Canadá, Estados Unidos y México. Es conocido por 
+                        su diversidad cultural y geográfica, que abarca desde las tundras del norte hasta los desiertos del suroeste.</h6></span>
+                </div>
+
+                <div class="region" id="region-americaCentro" data-info="América: Conocida por su diversidad cultural y geográfica, desde los bosques tropicales del Amazonas hasta las praderas del medio oeste.">
+                    <span>Centro América <h6>América Central es una región que conecta América del Norte y América del Sur. Incluye países como Guatemala,
+                         Honduras, El Salvador, Nicaragua, Costa Rica y Panamá. Es famosa por su rica biodiversidad y su cultura indígena.</h6></span>
+                </div>
+                
                 <div class="region" id="region-europa" data-info="Europa: Cuna de antiguas civilizaciones y hogar de muchos monumentos históricos importantes.">
-                    <span>Europa</span>
+                    <span>Europa <h6>Europa es un continente rico en historia y cultura, conocido por sus ciudades históricas y su influencia global. Incluye países como Francia,
+                         Alemania, Italia y España. Es famosa por su patrimonio artístico, su arquitectura y su diversidad lingüística.</h6></span>
                 </div>
+
+                <div class="region" id="region-africa" data-info="Europa: Cuna de antiguas civilizaciones y hogar de muchos monumentos históricos importantes.">
+                    <span>Africa <h6>África es el segundo continente más grande y cuenta con una gran variedad de culturas y ecosistemas. Incluye países como Egipto, 
+                        Sudáfrica, Nigeria y Kenia. Es famoso por su rica fauna, su historia antigua y su diversidad cultural.</h6></span>
+                </div>
+
+                <div class="region" id="region-oceania" data-info="Europa: Cuna de antiguas civilizaciones y hogar de muchos monumentos históricos importantes.">
+                    <span>Australia <h6>Oceanía es una región que incluye una gran variedad de islas y archipiélagos en el Pacífico. Está compuesta por países como Australia, 
+                        Nueva Zelanda, Papúa Nueva Guinea y muchas islas del Pacífico, como las Islas Fiyi y Samoa. Oceanía es conocida por su diversidad cultural, paisajes naturales
+                         impresionantes y una rica fauna, que incluye especies únicas como canguros y koalas. La región también alberga una gran variedad de culturas indígenas, especialmente en las islas del Pacífico, que tienen tradiciones y lenguas propias.</h6></span>
+                </div>
+
+                <div class="region" id="region-asia" data-info="Asia: Cuna de antiguas civilizaciones y hogar de muchos monumentos históricos importantes.">
+                    <span>Asia <h6>Asia es el continente más grande y poblado del mundo. Alberga países como China, India, Japón y Rusia. Es conocido por su diversidad cultural,
+                         lingüística y religiosa, así como por su impresionante paisaje que va desde desiertos hasta montañas.</h6></span>
+                </div>
+
+
+
                 <!-- Faltan otras regiones -->
             </div>
             <div id="info-box">
-                <p>Haz clic en una región para aprender algo nuevo.</p>
+                <p>Navega por el mapa para aprender sobre cada región.</p>
             </div>
         </div>
        
 
-        <section id="mini-juego" style="text-align:center; margin-top: 50px;">
+        <section id="mini-juego" style="text-align:center; margin-top: 50px; background-image: url('imagenes/Background2-02-02.png');
+                background-size: cover; background-position: center ;">
             <h2>¡Encuentra la Estrella!</h2>
             <p>Haz clic en la estrella que está escondida entre los planetas.</p>
-            
-            <div id="juego" style="display: flex; justify-content: center; margin-top: 20px;">
-                <img src="imagenes/planeta uno.jpg" alt="Planeta 1" class="planeta">
-                <img src="imagenes/planet dos.jpg" alt="Planeta 2" class="planeta">
-                <img src="imagenes/planeta tres.jpg" alt="Planeta 3" class="planeta">
-                <img src="imagenes/Estrella uno.png" alt="Estrella" class="estrella" style="display:none;">
-                <img src="imagenes/planeta cuatro.jpg" alt="Planeta 4" class="planeta">
-                <img src="imagenes/planeta cinco.jpg" alt="Planeta 5" class="planeta">
+
+            <div id="juego"  style="display: flex; justify-content: center; margin-top: 20px;">
+                <div class="juego-container" data-planeta="1">
+                    <img src="imagenes/planeta uno.jpg" alt="Planeta 1" class="planeta"> </div>
+                <div class="juego-container" data-planeta="2">
+                    <img src="imagenes/planet dos.jpg" alt="Planeta 2" class="planeta"></div>
+                <div class="juego-container" data-planeta="3">
+                    <img src="imagenes/planeta tres.jpg" alt="Planeta 3" class="planeta"></div>
+                <div class="juego-container" data-planeta="4">  
+                    <img src="imagenes/Estrella uno.png" alt="Estrella" class="estrella" style="display:none;"> </div> 
+                <div class="juego-container" data-planeta="5">
+                    <img src="imagenes/planeta cuatro.jpg" alt="Planeta 4" class="planeta"></div>
+                <div class="juego-container" data-planeta="5"> 
+                    <img src="imagenes/planeta cinco.jpg" alt="Planeta 5" class="planeta"></div>   
+               
             </div>
             
             <p id="mensaje" style="font-size: 18px; margin-top: 20px;"></p>
+
+            <button id="reiniciar" style=" margin-top: 20px;"> Juega de Nuevo</button>
         </section>
 
     
@@ -100,16 +151,27 @@
             }
         </script> 
 
-        <script src="index.js"></script>
+        <script src="assets/js/index.js"></script>
+        <script src="assets/js/main-header.js"></script>
+        <script src="assets/js/Learn-more-main.js"></script>
+        <script src="assets/js/mapa-interactivo.js"></script>
+        <script src="assets/js/Juego-interactivo.js"></script>
+
+
+    </main>
 
     <div class="footer">
+    
     <footer>
         <p>Contacto: HappyKids@gmail.com</p>
         <p>&copy; 2024 Happy Kids, Todos los derechos reservados.</p>
+        <p>Siguenos en redes sociales. </p>
+        <div class="footer-enlacfes">
         <ul class="social-media">
             <li><a href="#"><img src="imagenes/Icon Facebook.png" alt="Facebook" width="15px"></a></li>
             <li></li><a href="#"><img src="imagenes/Icon Instagram.png" alt="Instagram" width="29px"></a></li>
         </ul>
+        </div>
 
        
     </footer>

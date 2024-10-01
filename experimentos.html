@@ -3,24 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Kids - Experimentos y Manualidades</title>
     <link rel="stylesheet" href="assets/css/styles_experimentos.css">
+    <title>Happy Kids - Experimentos y Manualidades</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gorditas:wght@400;700&display=swap" rel="stylesheet">
+    
 </head>
 <body>
-    <header>
-        <div class="header-logo">
+    <header id="main-header">
+        <div class="logo">
            <a href="index.html"><img src="imagenes/LOGO SOLO.png" alt="Happy Kids Logo"></a> 
         </div>
         <nav>
-            <ul>
+            <ul class="nav-links">
                 <li><a href="experimentos.html">Experimentos</a></li>
                 <li><a href="emociones.html">Emociones</a></li>
                 <li><a href="Ingles.html">Aprende Inglés</a></li>
                 <li><a href="cuentos.html">Cuentos</a></li>
             </ul>
         </nav>
+        <img src="imagenes/elementos-gallardetes.png" alt="gallardetes" class="gallardetes">
     </header>
-
+    <main>
     <section id="experimentos" class="content-section">
         <div class="section-header">
             <h2>¡Descubre la ciencia con nuestros experimentos!</h2>
@@ -98,6 +103,10 @@
         <p id="hecho-curioso">Los volcanes pueden crecer hasta 10 cm en un solo día cuando están activos.</p>
         <button onclick="cambiarHecho()">Otro dato curioso</button>
     </div>
+
+    <script src="assets/js/main-header.js"></script>
+
+    </main>
 
     <footer>
         <p>&copy; 2024 Happy Kids. Todos los derechos reservados.</p>
