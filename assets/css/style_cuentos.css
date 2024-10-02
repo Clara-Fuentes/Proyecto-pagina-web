@@ -4,14 +4,14 @@
 /* Estilos generales */
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #FDF9F5;
+    background-color: #FFF5E1;
     color: #333;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #FDF9F5;
+    background-color: #FFF5E1;
     padding: 30px;
     gap: 80px;
     text-align: center;
@@ -81,10 +81,62 @@ section {
     padding: 40px;
 }
 
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    color: #000;
+}
+
+.swiper-pagination-bullet {
+    background: #000; /* Color de los puntos de paginación */
+}
+
+
+.libros-disponibles, .videos-disponibles {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.libro, .video {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    padding: 15px;
+    cursor: pointer;
+    width: 180px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.libro:hover, .video:hover {
+    transform: scale(1.05);
+}
+
+#mostrar-cuento, #mostrar-video {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+}
+
+iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    border: none;
+}
+
+
 .libros-disponibles, .videos-disponibles {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 15px;
     
 }
 
@@ -110,6 +162,19 @@ section {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 0;
+    position: relative;
+    z-index: 1;    
+
+}
+
+.parrafo {
+    padding: 40px;
+    padding-top: 90px;
 }
 
 /* Responsividad */

@@ -513,6 +513,82 @@ nav {
     transform: translateY(-5px);
 }
 
+/* Estilos para la sección de búsqueda de música */
+#buscar-musica {
+    background-color: #FDF9F5; 
+    padding: 90px;
+    border-radius: 10px; 
+    margin: 20px 0; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+#buscar-musica h2 {
+    font-size: 2em; 
+    color: #333; 
+    text-align: center; 
+    margin-bottom: 20px;
+}
+
+#buscar-musica input {
+    width: calc(100% - 40px); 
+    padding: 10px; 
+    border: 2px solid #007bff; 
+    border-radius: 5px; 
+    font-size: 1em; 
+    transition: border-color 0.3s; 
+}
+
+#buscar-musica input:focus {
+    border-color:#A8BF6E;
+    outline: none; 
+}
+
+#buscar-musica button {
+    background-color:#e08665; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    cursor: pointer;
+    font-size: 1em; 
+    margin-left: 10px; 
+    transition: background-color 0.3s; 
+}
+
+#buscar-musica button:hover {
+    background-color:#A8BF6E; 
+}
+
+#resultados-musica {
+    margin-top: 20px; 
+}
+
+#resultados-musica div {
+    background-color: #fff; 
+    border: 1px solid #ddd;
+    border-radius: 5px; 
+    padding: 15px; 
+    margin-bottom: 15px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+#resultados-musica h3 {
+    color:#A8BF6E; 
+    margin: 0 0 10px; 
+}
+
+#resultados-musica p {
+    color: #555; 
+    margin: 0 0 10px; 
+}
+
+iframe {
+    max-width: 100%; 
+    height: auto; 
+}
+
+
+
 
 
 
@@ -523,8 +599,13 @@ footer {
     z-index: 1;    
 
 }
+
+.parrafo {
+    padding: 50px;
+    padding-top: 90px;
+}
     
-    .social-media{
+    .social-icons{
         list-style: none;
         display: flex;
         justify-content: center;
@@ -532,14 +613,14 @@ footer {
     }
 
 
-    .social-media {
+    .social-icons {
     margin: 10px 10px;
     }
 
-    .social-media li {
+    .social-icons  {
      display: inline;
-    }
     
+    }
 
 
                                                         /*Media Queries*/
@@ -583,10 +664,15 @@ footer {
 
     }
 
+/* Responsive adjustments */
 @media (max-width: 768px) {
- 
-    .gallardetes {
-        width: 100px;
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .logo {
+        max-width: 120px;
     }
 
     nav {
@@ -594,72 +680,148 @@ footer {
     }
 
     .nav-links {
-        flex-direction: column;
-        gap: 10px;
+        gap: 20px;
+        padding: 10px;
     }
 
-    .hero-logo{
-        width: 112%;
-        align-items: center;
-        margin: -20px;
-        padding-block: 30px;
+    .nav-links li a {
+        font-size: 16px;
+    }
 
-        }   
+    /* Adjust gallardetes for smaller screens */
+    .gallardetes {
+        width: 150px;
+    }
 
-    .hero {
-        padding: 45px 45px; 
+    .intro-section {
+     align-content: center;
     }
 
     .intro-section h2 {
-        font-size: 1.1rem;
+        font-size: 25px;
+        padding-top: 800px;
+        max-width: 90%;
+        margin: 5px 100px 5px 5px;
+        text-align: center;
     }
 
     .intro-section p {
         font-size: 0.8rem;
-        margin: 0px 0PX;
+    }
+
+
+
+    #learn-more {
+        font-size: 14px;
+        margin: 10px 250px
+    }
+
+    #hoy-aprendemos {
+        padding: 20px;
+        max-width: 90%;
+        padding-top: 500px;
+    }
+
+    .niño-leyendo img {
+        width: 300px;
+    }
+
+    #hoy-aprendemos h1 {
+        font-size: 1.5rem;
+    }
+
+    #hoy-aprendemos p {
+        font-size: 0.9rem;
+    }
+
+    /* Adjust map and mini-game for smaller screens */
+    #mapa-interactivo {
         max-width: 100%;
-    }
-
-    .learn-more{
-        padding: 8px 20px;
-        font-size: 0.8rem;
-    }
-
-    #mapa-interactivo h2 {
-        font-size: 1.7rem;
+        padding: 20px;
     }
 
     #mapa-imagen {
         width: 100%;
     }
-}
 
-@media (max-width: 480px) {
-
-    .gallardetes {
-        width: 90px;
-    }
-
-    .hero h2 {
-        font-size: 1.2rem;
-    }
-
-    .hero p {
-        font-size: 0.8rem;
+    .map-container {
         max-width: 100%;
     }
 
-    .learn-more{
-        padding: 6px 15px;
+    #mini-juego {
+        padding: 80px;
+    }
+
+    #mini-juego h2 {
+        font-size: 1.5rem;
+    }
+
+    .juego-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px;
+    }
+
+    /* Footer */
+    footer p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .logo {
+        max-width: 100px;
+    }
+
+    .intro-section h2 {
+        font-size: 20px;
+        padding: 20px 40px;
+    }
+
+    .intro-section p {
+        font-size: 0.7rem;
+    }
+
+    #learn-more {
+        font-size: 12px;
+        margin: 20px auto;
+    }
+
+    #hoy-aprendemos h1 {
+        font-size: 1.2rem;
+    }
+
+    .niño-leyendo img {
+        width: 150px;
+    }
+
+    #mapa-imagen {
+        width: 100%;
+        height: auto;
+    }
+
+    .region {
+        width: 10%;
+    }
+
+    #mini-juego {
+        padding: 40px;
+    }
+
+    #mini-juego h2 {
+        font-size: 1.2rem;
+    }
+
+    footer p {
         font-size: 0.8rem;
     }
-
-    .children-img {
-        width: 35%;
-    }
-
-    .libros-img {
-        width: 25%;
-    }
-
 }

@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cuentos Interactivos - Happy Kids</title>
     <link rel="stylesheet" href="assets/css/style_cuentos.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 <body>
     <header>
@@ -23,57 +28,122 @@
         <img src="imagenes/elementos-gallardetes.png" alt="gallardetes" class="gallardetes">
     </header>
 
-    <main>
-        <!-- Sección: ¿Quieres leer un cuento? -->
-        <section id="leer-cuento">
-            <h2>¿Quieres leer un cuento?</h2>
-            <div class="libros-disponibles">
-                <div class="libro" onclick="mostrarCuento('cuento1')">
-                    <h3>El Cuento</h3>
-                    <p>Descripción corta del cuento 1</p>
-                </div>
-                <div class="libro" onclick="mostrarCuento('cuento2')">
-                    <h3>El Cuento 2</h3>
-                    <p>Descripción corta del cuento 2</p>
-                </div>
-                <div class="libro" onclick="mostrarCuento('cuento3')">
-                    <h3>El Cuento 3</h3>
-                    <p>Descripción corta del cuento 3</p>
-                </div>
-                <div class="libro" onclick="mostrarCuento('cuento4')">
-                    <h3>El Cuento 4</h3>
-                    <p>Descripción corta del cuento 4</p>
-                </div>
-                <div class="libro" onclick="mostrarCuento('cuento5')">
-                    <h3>El Cuento 5</h3>
-                    <p>Descripción corta del cuento 5</p>
-                </div>
+    <!-- Cuentos Lectura Section -->
+     <section class="cuentos-carrusel">
+    <div class="swiper-container cuentos-carrusel-container">
+        <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/0gNukt67EkE?si=w71EfoLqO5OIBaos" 
+                title="Juan sin miedo" allow="gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
-            <div id="mostrar-cuento" class="cuento">
-                <!-- Aquí se mostrará el cuento seleccionado en formato libro -->
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/xuoQge--vV4?si=zu2hbKaJDn_FJPb8" 
+                title="El patito feo" allow="gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
-        </section>
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/PXf6tiXF9b8?si=JKfQeNpxgF6vyluH" 
+                title="La ratita presumida" allow="gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <!-- Slide 4 -->
+            <div class="swiper-slide">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/_HX5XVdNmzo?si=euBGkqDi2d15dfrv" 
+                title="Los tres cerditos" allow="gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <!-- Slide 5 -->
+            <div class="swiper-slide">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/cD4OpRIuQt8?si=hppQkOkGnh0s6HbM" 
+                title="Aladino" allow="gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+    
+        <!-- Controles de navegación -->
+        <div class="swiper-button-next cuentos-next"></div>
+        <div class="swiper-button-prev cuentos-prev"></div>
+    
+        <!-- Paginación -->
+        <div class="swiper-pagination cuentos-pagination"></div>
+    </div>
+    </section>
 
-        <!-- Sección: ¿Y si escuchamos un cuento? -->
-        <section id="escuchar-cuento">
-            <h2>¿Y si escuchamos un cuento?</h2>
-            <div class="videos-cuentos">
-                <div class="video" onclick="mostrarVideo('video1')">
-                    <h3>Video Cuento 1</h3>
-                    <p>Descripción corta del video 1</p>
-                </div>
-                <div class="video" onclick="mostrarVideo('video2')">
-                    <h3>Video Cuento 2</h3>
-                    <p>Descripción corta del video 2</p>
-                </div>
-                <!-- Puedes agregar más videos aquí -->
-            </div>
-            <div id="mostrar-video" class="video">
-                <!-- Aquí se mostrará el video seleccionado -->
-            </div>
-        </section>
+        <!-- Cuentos Animados Section -->
+       
+        <!--/section-->
+
+    <section class="cuentos-animados">
+        
+        <iframe width="560px" height="315px" src="https://www.youtube.com/embed/CsC2Sg4I5vs?si=6kXAALPAN2qkVicK"
+        title="Rapunzel y La Huida de Hansel y Grete" allow="gyroscope; picture in picture; web share" allowfullscreen></iframe>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Ld7KsAItZYw?si=etGJ0T7dkBmfWZYR" 
+        title="El tigre desobediente" allow=" gyroscope; picture-in-picture; web-share"  allowfullscreen></iframe>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/gDE-AOghWLU?si=FXSAwZQl6kaKn9zl" 
+        title="El cumpleaños de la jirafa" allow="gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/CkP-7P6h8IU?si=4MSZ2aNToDIHwRLA" 
+        title="El raton cobarde" allow=" gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/iCDbt2SWrSQ?si=ZOSd22o5hytIRfRX" 
+        title="El oso dormilon" allow=" gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/xBduECt63_w?si=OgwrDbRuHlZrqh0b" 
+        title="La jirafa resfriada" allow="gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+
+        <script>
+            var cuentosCarrusel = new Swiper('.cuentos-carrusel-container', {
+                slidesPerView: 2,        // Mostrar 1 video a la vez
+                spaceBetween: 4,        // Espacio entre las cartas
+                loop: true,              // Hacer que el carrusel sea infinito
+                pagination: {
+                    el: '.cuentos-pagination',
+                    clickable: true,     // Permitir hacer clic en los indicadores de paginación
+                },
+                navigation: {
+                    nextEl: '.cuentos-next',
+                    prevEl: '.cuentos-prev',
+                },
+            });
+        </script>
+
+       <!--<script>
+            var cuentosAnimadosCarrusel = new Swiper('.cuentos-animados-container', {
+                slidesPerView: 2,        // Mostrar 1 video a la vez
+                spaceBetween: 6,        // Espacio entre los videos
+                loop: true,              // Carrusel infinito
+                pagination: {
+                    el: '.animados-pagination',
+                    clickable: true,     // Paginar con clics
+                },
+                navigation: {
+                    nextEl: '.animados-next',
+                    prevEl: '.animados-prev',
+                },
+            });
+        </script> --> 
+
+
     </main>
 
-    <script src="script-cuentos.js"></script>
+    <script src="assets/js/carrusel-cuentos.js"></script>
+
+    <footer>
+        <div class="footer-content" style="background-image: url( 'imagenes/Background-footer-03.png'); height: 300px; background-size: cover;">
+        <div class="parrafo">
+        <p>Contacto: HappyKids@gmail.com</p>
+        <p>&copy; 2024 Happy Kids, Todos los derechos reservados.</p>
+        <p>Siguenos en redes sociales. </p>
+        </div>
+        <div class="social-icons">
+            <a href="#"><img src="imagenes/Icon Facebook.png" alt="Facebook" width="15px"></a>
+            <a href="#"><img src="imagenes/Icon Instagram.png" alt="Instagram" width="29px"></a>
+        </div>
+
+       
+    </footer>  
 </body>
 </html>

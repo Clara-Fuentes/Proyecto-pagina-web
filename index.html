@@ -54,7 +54,7 @@
             </div>
             <div class="text-hoyAprendemos">
             <h1>Aprendamos algo nuevo juntos</h1>
-            <p>¿Sabías que puedes hacer que un huevo flote? ¡Descúbrelo en nuestra sección de experimentos!</p>
+            <p>¿Sabías que puedes hacer luz neón cacera? ¡Descúbrelo en nuestra sección de experimentos!</p>
             <a href="experimentos.html" class="boton-personalizado">¡Vamos!</a>
             </div>
         </section>
@@ -139,43 +139,112 @@
             <button id="reiniciar" style=" margin-top: 20px;"> Juega de Nuevo</button>
         </section>
 
-    
-
-        <button onclick="playSound()">Haz clic aquí</button>
-
-        <audio id="soundEffect" src="sound.mp3" preload="auto"></audio>
+        <section id="buscar-musica">
+            <h2>Busca tu música favorita</h2>
+            
+            <!-- Campo de búsqueda -->
+            <input type="text" id="buscar-musica-input" placeholder="Escribe el nombre de la canción..." />
+            <button onclick="buscarMusica()">Buscar</button>
+            <button id="btn-limpiar">Limpiar</button>
+            
+            <!-- Resultados de la búsqueda -->
+            <div id="resultados-musica">
+                <p>Tus resultados aparecerán aquí.</p>
+            </div>
+        </section>
         
         <script>
-            function playSound() {
-                document.getElementById('soundEffect').play();
+            const apiKey = 'AIzaSyCdWe__e2q6W2KugPorXK9Ommm4E6eRzbg'; // API de YouTube
+        
+            // Función que crea el embed del video de YouTube
+            function embedYouTube(videoId) {
+                return `
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/${videoId}" 
+                        allow="gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                `;
             }
-        </script> 
+        
+            // Función para buscar música en YouTube
+            async function buscarMusica() {
+                const query = document.getElementById('buscar-musica-input').value;
+                
+                // Validación básica para asegurarse de que el campo no esté vacío
+                if (query.trim() === "") {
+                    alert("Por favor, ingresa el nombre de una canción.");
+                    return;
+                }
+        
+                // Limpiar resultados anteriores
+                const resultadosMusica = document.getElementById('resultados-musica');
+                resultadosMusica.innerHTML = '<p>Cargando resultados...</p>';
+        
+                try {
+                    // Realizar la búsqueda a la API de YouTube
+                    const response = await fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&q=${encodeURIComponent(query)}&key=${apiKey}`);
+                    const data = await response.json();
+        
+                    // Limpiar resultados
+                    resultadosMusica.innerHTML = '';
+        
+                    if (data.items.length === 0) {
+                        resultadosMusica.innerHTML = '<p>No se encontraron resultados.</p>';
+                        return;
+                    }
+
+                        // Agregar event listener al botón de limpiar
+                    document.getElementById("btn-limpiar").addEventListener("click", function() {
+                        document.getElementById("buscar-musica-input").value = ""; // Limpiar el campo de búsqueda
+                        document.getElementById("resultados-musica").innerHTML = ""; // Limpiar los resultados
+                    });
+        
+                    // Generar resultados de la búsqueda
+                    data.items.forEach(item => {
+                        const videoId = item.id.videoId;
+                        const title = item.snippet.title;
+                        const description = item.snippet.description;
+                        resultadosMusica.innerHTML += `
+                            <div>
+                                <h3>${title}</h3>
+                                <p>${description}</p>
+                                ${embedYouTube(videoId)}
+                            </div>
+                        `;
+                    });
+        
+                } catch (error) {
+                    console.error('Error al buscar música:', error);
+                    resultadosMusica.innerHTML = '<p>Error al buscar música. Por favor, intenta de nuevo más tarde.</p>';
+                }
+            }
+        </script>
+        
+
 
         <script src="assets/js/index.js"></script>
         <script src="assets/js/main-header.js"></script>
         <script src="assets/js/Learn-more-main.js"></script>
         <script src="assets/js/mapa-interactivo.js"></script>
-        <script src="assets/js/Juego-interactivo.js"></script>
+     <!--<script src="assets/js/Juego-interactivo.js"></script> -->   
 
 
     </main>
 
-    <div class="footer">
+    
     
     <footer>
+        <div class="footer-content" style="background-image: url( 'imagenes/Background-footer-03.png'); height: 300px; background-size: cover;">
+        <div class="parrafo">
         <p>Contacto: HappyKids@gmail.com</p>
         <p>&copy; 2024 Happy Kids, Todos los derechos reservados.</p>
         <p>Siguenos en redes sociales. </p>
-        <div class="footer-enlacfes">
-        <ul class="social-media">
-            <li><a href="#"><img src="imagenes/Icon Facebook.png" alt="Facebook" width="15px"></a></li>
-            <li></li><a href="#"><img src="imagenes/Icon Instagram.png" alt="Instagram" width="29px"></a></li>
-        </ul>
+        </div>
+        <div class="social-icons">
+            <a href="#"><img src="imagenes/Icon Facebook.png" alt="Facebook" width="15px"></a>
+            <a href="#"><img src="imagenes/Icon Instagram.png" alt="Instagram" width="29px"></a>
         </div>
 
        
-    </footer>
-    </div>   
+    </footer>  
 
 </body>
 </html>
