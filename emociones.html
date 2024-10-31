@@ -37,7 +37,7 @@
     <main class="content">
     
         <div class= "intro-emociones">
-        <h2>Vamos a aprender de las emociones</h2>
+        <h2>¡Vamos a aprender de las emociones!</h2>
         <p>¿Qué color es cada emoción para ti?</p>
         </div>
 
@@ -47,7 +47,7 @@
                 <h3>Furia</h3>
                 <img src="img/furia.jpg" alt="Furia">
                 <div class="buttons">
-                    <a href="angry.pdf" target="_blank" class="btn">Imprimir</a>
+                    <a href="imagenes/furia.pdf" target="_blank" class="btn">Imprimir</a>
                     <a href="https://www.supercoloring.com/es/node/398996?colore=online" target="_blank" class="btn">Colorear</a>
                 </div>
             </div>
@@ -56,7 +56,7 @@
                 <h3>Desagrado</h3>
                 <img src="img/digus.jfif" alt="Desagrado">
                 <div class="buttons">
-                    <a href="disgust.pdf" target="_blank" class="btn">Imprimir</a>
+                    <a href="imagenes/desagrado.pdf" target="_blank" class="btn">Imprimir</a>
                     <a href="https://www.supercoloring.com/es/node/398996?colore=online" target="_blank" class="btn">Colorear</a>
                 </div>
             </div>
@@ -65,7 +65,7 @@
                 <h3>Temor</h3>
                 <img src="img/fear.jfif" alt="Temor">
                 <div class="buttons">
-                    <a href="fear.pdf" target="_blank" class="btn">Imprimir</a>
+                    <a href="imagenes/miedo.pdf" target="_blank" class="btn">Imprimir</a>
                     <a href="https://www.supercoloring.com/es/node/398992?colore=online" target="_blank" class="btn">Colorear</a>
                 </div>
             </div>
@@ -74,7 +74,7 @@
                 <h3>Alegría</h3>
                 <img src="img/alegria.jfif" alt="Alegría">
                 <div class="buttons">
-                    <a href="joy.pdf" target="_blank" class="btn">Imprimir</a>
+                    <a href="imagenes/alegria.pdf" target="_blank" class="btn">Imprimir</a>
                     <a href="https://www.supercoloring.com/es/node/398990?colore=online" target="_blank" class="btn">Colorear</a>
                 </div>
             </div>
@@ -83,7 +83,7 @@
                 <h3>Tristeza</h3>
                 <img src="img/tristeza.jfif" alt="Tristeza">
                 <div class="buttons">
-                    <a href="sad.pdf" target="_blank" class="btn">Imprimir</a>
+                    <a href="imagenes/tristeza.pdf" target="_blank" class="btn">Imprimir</a>
                     <a href="https://www.supercoloring.com/es/node/398994?colore=online" target="_blank" class="btn">Colorear</a>
                 </div>
             </div>
@@ -170,36 +170,56 @@
       </section>
 
 
-    <h2>Mini Cuestionario</h2>
-
-<form id="quizForm">
-    <div class="question">
-        <p>1. Cuando visitas un parque de diversiones donde puedes jugar muchos juegos y ganar premios, ¿cómo te sientes?</p>
-        <textarea id="sentimiento-parque" name="sentimiento-parque" rows="4" cols="50" required></textarea>
-    </div>
+      <section class="emotion-quiz">
+        <h2>¿Listo para descubrir tus emociones?</h2>
+        <p>Responde estas preguntas y descubre más sobre cómo te sientes.</p>
+      
+        <div class="quiz-container">
+          <!-- Pregunta 1 -->
+          <div class="question-card active" data-question="1">
+            <h3>¿Cómo te sientes hoy?</h3>
+            <div class="options">
+              <button class="option" data-answer="Muy feliz">😃 Muy feliz</button>
+              <button class="option" data-answer="Triste">😔 Triste</button>
+              <button class="option" data-answer="Emocionado/a">😄 Emocionado/a</button>
+              <button class="option" data-answer="Asustado/a">😱 Asustado/a</button>
+              <button class="option" data-answer="Enfadado/a">😡 Enfadado/a</button>
+            </div>
+          </div>
+      
+          <!-- Pregunta 2 -->
+          <div class="question-card" data-question="2">
+            <h3>¿Qué haces cuando estás triste o molesto/a?</h3>
+            <div class="options">
+              <button class="option" data-answer="Hablo con alguien">Hablo con alguien</button>
+              <button class="option" data-answer="Juego">Juego</button>
+              <button class="option" data-answer="Leo">Leo</button>
+              <button class="option" data-answer="Me quedo solo/a">Me quedo solo/a</button>
+              <button class="option" data-answer="Otro">Otro</button>
+            </div>
+          </div>
+      
+          <!-- Pregunta 3 -->
+          <div class="question-card" data-question="3">
+            <h3>¿Cuál es tu actividad favorita cuando estás feliz?</h3>
+            <div class="options">
+              <button class="option" data-answer="Jugar">Jugar</button>
+              <button class="option" data-answer="Dibujar">Dibujar</button>
+              <button class="option" data-answer="Bailar">Bailar</button>
+              <button class="option" data-answer="Escuchar música">Escuchar música</button>
+              <button class="option" data-answer="Otro">Otro</button>
+            </div>
+          </div>
+      
+          <!-- Mensaje final -->
+          <div class="quiz-end">
+            <h3>¡Gracias por compartir tus emociones!</h3>
+            <p>Recuerda que está bien sentir de muchas maneras diferentes.</p>
+            <button onclick="restartQuiz()" class="volver-empezar">Volver a empezar</button>
+          </div>
+        </div>
+      </section>
     
-    <div class="question">
-        <p>2. ¿Qué situación te hace sentir incómodo?</p>
-        <textarea id="situacion-incomodo" name="situacion-incomodo" rows="4" cols="50" required></textarea>
-    </div>
-    
-    <div class="question">
-        <p>3. ¿Recuerdas cuando jugaste fútbol o cualquier otro juego por primera vez? ¿Qué sentiste?</p>
-        <textarea id="primer-juego" name="primer-juego" rows="4" cols="50" required></textarea>
-    </div>
-    
-    <button type="submit" class="submit-btn">Enviar Respuestas</button>
-</form>
-
-<div class="container">
-    <button onclick="imprimirPagina()">Imprimir</button>
-</div>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384- w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-
-
-<!-- archivo JavaScript -->
-    <script src="index.js"></script>
 
     </main>
 
@@ -247,18 +267,24 @@
   <script src="assets/js/inicio-sesion.js"></script>
   <script src="assets/js/videos-emociones.js"></script>
   <script src="assets/js/juegos-emociones.js"></script>
+  <script src="assets/js/cuestionario-emociones.js"></script>
+  <script src="assets/js/main-header.js"></script>
 
-
-<footer>
-    
+  <footer>
+    <div class="footer-content" style="background-image: url( 'imagenes/Background-footer-03.png'); height: 300px; background-size: cover;">
     <div class="parrafo">
     <p>Contacto: HappyKids@gmail.com</p>
     <p>&copy; 2024 Happy Kids, Todos los derechos reservados.</p>
     <p>Siguenos en redes sociales. </p>
-
-
+    </div>
+    <div class="social-icons">
+        <a href="#"><img src="imagenes/Icon Facebook.png" alt="Facebook" width="15px"></a>
+        <a href="#"><img src="imagenes/Icon Instagram.png" alt="Instagram" width="29px"></a>
+    </div>
 
    
 </footer>  
+  
+  
 </body> 
 </html>

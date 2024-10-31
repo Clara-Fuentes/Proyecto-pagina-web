@@ -13,120 +13,157 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 <body>
-    <header>
-        <div class="header-logo">
-         <a href="index.html"> <img src="imagenes/LOGO SOLO.png" alt="Happy Kids Logo" class="logo"></a> 
+    <header id="main-header">
+        <div class="logo">
+        <img src="imagenes/LOGO SOLO.png" alt="Happy Kids Logo" class="logo">
         </div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="experimentos.html">Experimentos</a></li>
-                <li><a href="emociones.html">Emociones</a></li>
-                <li><a href="Ingles.html">Aprende Inglés</a></li>
-                <li><a href="cuentos.html">Cuentos</a></li>
-                <button id="login-btn" class="btn-login">Iniciar Sesión</button>
-            </ul>
-        </nav>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#Emociones">Inicio</a></li>
+                    <li><a href="#Emociones">Emociones</a></li>
+                    <li><a href="experimentos.html">Experimentos</a></li>
+                    <li><a href="Ingles.html">Aprende Inglés</a></li>
+                    <li><a href="cuentos.html">Cuentos</a></li>
+                    <button id="login-btn" class="btn-login">Iniciar Sesión</button>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         <img src="imagenes/elementos-gallardetes.png" alt="gallardetes" class="gallardetes">
-    </header>
+        </header>
 
-    <!-- Cuentos Lectura Section -->
-     <section class="cuentos-carrusel">
-    <div class="swiper-container cuentos-carrusel-container">
-        <div class="swiper-wrapper">
-            <!-- Slide 1 -->
-            <div class="swiper-slide">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/0gNukt67EkE?si=w71EfoLqO5OIBaos" 
-                title="Juan sin miedo" allow="gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <section class="cuentos-carrusel">
+            <h2 class="cuentos-titulo">Elige tu cuento favorito</h2>
+            <div class="carrusel-thumbnails">
+              <!-- Miniaturas de cuentos con descripciones -->
+              <div class="thumbnail" data-video="https://www.youtube.com/embed/0gNukt67EkE?si=w71EfoLqO5OIBaos">
+                <img src="imagenes/juan-sin-miedo.png" alt="Juan sin miedo">
+                <p>Juan sin miedo</p>
+              </div>
+              <div class="thumbnail" data-video="https://www.youtube.com/embed/xuoQge--vV4?si=zu2hbKaJDn_FJPb8">
+                <img src="imagenes/patito-feo.jpg" alt="El patito feo">
+                <p>El patito feo</p>
+              </div>
+              <div class="thumbnail" data-video="https://www.youtube.com/embed/PXf6tiXF9b8?si=JKfQeNpxgF6vyluH">
+                <img src="imagenes/ratita-presumida.jpg" alt="La ratita presumida">
+                <p>La ratita presumida</p>
+              </div>
+              <div class="thumbnail" data-video="https://www.youtube.com/embed/_HX5XVdNmzo?si=euBGkqDi2d15dfrv">
+                <img src="imagenes/tres-cerditos.jpg" alt="Los tres cerditos">
+                <p>Los tres cerditos</p>
+              </div>
+              <div class="thumbnail" data-video="https://www.youtube.com/embed/cD4OpRIuQt8?si=hppQkOkGnh0s6HbM">
+                <img src="imagenes/aladino.jpg" alt="Aladino">
+                <p>Aladino</p>
+              </div>
             </div>
-            <!-- Slide 2 -->
-            <div class="swiper-slide">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/xuoQge--vV4?si=zu2hbKaJDn_FJPb8" 
-                title="El patito feo" allow="gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          
+            <!-- Video principal para mostrar el cuento seleccionado -->
+            <div class="video-display">
+              <iframe width="100%" height="400" src="https://www.youtube.com/embed/0gNukt67EkE?si=w71EfoLqO5OIBaos" 
+              title="Video Cuento" allow="gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
-            <!-- Slide 3 -->
-            <div class="swiper-slide">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/PXf6tiXF9b8?si=JKfQeNpxgF6vyluH" 
-                title="La ratita presumida" allow="gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
-            <!-- Slide 4 -->
-            <div class="swiper-slide">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/_HX5XVdNmzo?si=euBGkqDi2d15dfrv" 
-                title="Los tres cerditos" allow="gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
-            <!-- Slide 5 -->
-            <div class="swiper-slide">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/cD4OpRIuQt8?si=hppQkOkGnh0s6HbM" 
-                title="Aladino" allow="gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
-        </div>
-    
-        <!-- Controles de navegación -->
-        <div class="swiper-button-next cuentos-next"></div>
-        <div class="swiper-button-prev cuentos-prev"></div>
-    
-        <!-- Paginación -->
-        <div class="swiper-pagination cuentos-pagination"></div>
-    </div>
-    </section>
+          
+            <!-- Botón de Reproducción Aleatoria -->
+            <button class="btn-random">🎲 Cuento sorpresa</button>
+          </section>
 
         <!-- Cuentos Animados Section -->
        
         <!--/section-->
 
-    <section class="cuentos-animados">
-        
-        <iframe width="560px" height="315px" src="https://www.youtube.com/embed/CsC2Sg4I5vs?si=6kXAALPAN2qkVicK"
-        title="Rapunzel y La Huida de Hansel y Grete" allow="gyroscope; picture in picture; web share" allowfullscreen></iframe>
+        <section class="cuentos-animados">
+            <h2>Explora nuestros cuentos animados</h2>
+            <div class="cuentos-grid">
+          
+              <!-- Cuento 1 -->
+              <div class="cuento-card" data-video="https://www.youtube.com/embed/CsC2Sg4I5vs?enablejsapi=1">
+                <img src="https://img.youtube.com/vi/CsC2Sg4I5vs/0.jpg" alt="Miniatura del cuento Rapunzel y La Huida de Hansel y Grete">
+                <h3>Rapunzel y La Huida de Hansel y Grete</h3>
+                <p>Descubre la mágica historia de Rapunzel junto a Hansel y Gretel.</p>
+                <button class="view-button" aria-label="Ver cuento Rapunzel y La Huida de Hansel y Grete">Ver ahora</button>
+              </div>
+          
+              <!-- Cuento 2 -->
+              <div class="cuento-card" data-video="https://www.youtube.com/embed/Ld7KsAItZYw?enablejsapi=1">
+                <img src="https://img.youtube.com/vi/Ld7KsAItZYw/0.jpg" alt="Miniatura del cuento El tigre desobediente">
+                <h3>El tigre desobediente</h3>
+                <p>¿Qué pasa cuando un tigre no sigue las reglas? ¡Averígualo!</p>
+                <button class="view-button" aria-label="Ver cuento El tigre desobediente">Ver ahora</button>
+              </div>
+          
+              <!-- Cuento 3 -->
+              <div class="cuento-card" data-video="https://www.youtube.com/embed/gDE-AOghWLU?enablejsapi=1">
+                <img src="https://img.youtube.com/vi/gDE-AOghWLU/0.jpg" alt="Miniatura del cuento El cumpleaños de la jirafa">
+                <h3>El cumpleaños de la jirafa</h3>
+                <p>¡Celebra el cumpleaños de la jirafa en esta divertida historia!</p>
+                <button class="view-button" aria-label="Ver cuento El cumpleaños de la jirafa">Ver ahora</button>
+              </div>
+          
+              <!-- Cuento 4 -->
+              <div class="cuento-card" data-video="https://www.youtube.com/embed/CkP-7P6h8IU?enablejsapi=1">
+                <img src="https://img.youtube.com/vi/CkP-7P6h8IU/0.jpg" alt="Miniatura del cuento El ratón cobarde">
+                <h3>El ratón cobarde</h3>
+                <p>Conoce a un ratón que aprende a enfrentar sus miedos.</p>
+                <button class="view-button" aria-label="Ver cuento El ratón cobarde">Ver ahora</button>
+              </div>
+          
+              <!-- Cuento 5 -->
+              <div class="cuento-card" data-video="https://www.youtube.com/embed/iCDbt2SWrSQ?enablejsapi=1">
+                <img src="https://img.youtube.com/vi/iCDbt2SWrSQ/0.jpg" alt="Miniatura del cuento El oso dormilón">
+                <h3>El oso dormilón</h3>
+                <p>Un oso que nunca quiere despertar. ¡Descubre su historia!</p>
+                <button class="view-button" aria-label="Ver cuento El oso dormilón">Ver ahora</button>
+              </div>
+          
+              <!-- Cuento 6 -->
+              <div class="cuento-card" data-video="https://www.youtube.com/embed/xBduECt63_w?enablejsapi=1">
+                <img src="https://img.youtube.com/vi/xBduECt63_w/0.jpg" alt="Miniatura del cuento La jirafa resfriada">
+                <h3>La jirafa resfriada</h3>
+                <p>Acompaña a la jirafa mientras intenta curarse de un resfriado.</p>
+                <button class="view-button" aria-label="Ver cuento La jirafa resfriada">Ver ahora</button>
+              </div>
+          
+            </div>
+          </section>
+          
+          <!-- Modal para el reproductor de video -->
+          <div class="video-modal" id="videoModal" aria-hidden="true" role="dialog">
+            <div class="modal-content">
+              <span class="close-button" onclick="closeModal()" aria-label="Cerrar video">&times;</span>
+              <iframe id="modalVideo" width="560" height="315" frameborder="0" allow="gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/Ld7KsAItZYw?si=etGJ0T7dkBmfWZYR" 
-        title="El tigre desobediente" allow=" gyroscope; picture-in-picture; web-share"  allowfullscreen></iframe>
-
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/gDE-AOghWLU?si=FXSAwZQl6kaKn9zl" 
-        title="El cumpleaños de la jirafa" allow="gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/CkP-7P6h8IU?si=4MSZ2aNToDIHwRLA" 
-        title="El raton cobarde" allow=" gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/iCDbt2SWrSQ?si=ZOSd22o5hytIRfRX" 
-        title="El oso dormilon" allow=" gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/xBduECt63_w?si=OgwrDbRuHlZrqh0b" 
-        title="La jirafa resfriada" allow="gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-
-
-        <script>
-            var cuentosCarrusel = new Swiper('.cuentos-carrusel-container', {
-                slidesPerView: 2,        // Mostrar 1 video a la vez
-                spaceBetween: 4,        // Espacio entre las cartas
-                loop: true,              // Hacer que el carrusel sea infinito
-                pagination: {
-                    el: '.cuentos-pagination',
-                    clickable: true,     // Permitir hacer clic en los indicadores de paginación
-                },
-                navigation: {
-                    nextEl: '.cuentos-next',
-                    prevEl: '.cuentos-prev',
-                },
-            });
-        </script>
-
-       <!--<script>
-            var cuentosAnimadosCarrusel = new Swiper('.cuentos-animados-container', {
-                slidesPerView: 2,        // Mostrar 1 video a la vez
-                spaceBetween: 6,        // Espacio entre los videos
-                loop: true,              // Carrusel infinito
-                pagination: {
-                    el: '.animados-pagination',
-                    clickable: true,     // Paginar con clics
-                },
-                navigation: {
-                    nextEl: '.animados-next',
-                    prevEl: '.animados-prev',
-                },
-            });
-        </script> --> 
+          <div class="quiz-wrapper">
+            <!-- Pantalla de inicio -->
+            <div id="inicio-quiz">
+                <h1>¡Bienvenidos al Quiz de Cuentos Animados!</h1>
+                <p>Pon a prueba tus conocimientos sobre los cuentos que has visto.</p>
+                <button id="boton-inicio" class="btn-principal">Empezar Quiz</button>
+            </div>
+    
+            <!-- Pantalla de preguntas -->
+            <div id="pantalla-quiz" class="pantalla-oculta">
+                <h2 id="texto-pregunta"></h2>
+                <div class="contenedor-opciones">
+                    <button class="btn-opcion" id="opcion1" onclick="verificarRespuesta(0)"></button>
+                    <button class="btn-opcion" id="opcion2" onclick="verificarRespuesta(1)"></button>
+                    <button class="btn-opcion" id="opcion3" onclick="verificarRespuesta(2)"></button>
+                    <button class="btn-opcion" id="opcion4" onclick="verificarRespuesta(3)"></button>
+                </div>
+            </div>
+    
+            <!-- Pantalla de resultados -->
+            <div id="pantalla-resultado" class="pantalla-oculta">
+                <h2>Resultado del Quiz</h2>
+                <p id="mensaje-resultado"></p>
+                <button id="boton-reintentar" class="btn-principal">Intentar de nuevo</button>
+            </div>
+        </div>
 
 
     </main>
@@ -171,6 +208,10 @@
         </div>
 
         <script src="assets/js/inicio-sesion.js"></script>
+        <script src="assets/js/main-header.js"></script>
+        <script src="assets/js/cuentos-animados.js"></script>
+        <script src="assets/js/carrusel-cuentos.js"></script>
+        <script src="assets/js/quiz-cuentos.js"></script>
 
     <script src="assets/js/carrusel-cuentos.js"></script>
 

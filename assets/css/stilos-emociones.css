@@ -24,7 +24,7 @@ h6 {
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #FDF9F5;
-  color: #686464;
+  color: #756f6f;
   font-style:normal;
 }
 
@@ -186,7 +186,7 @@ nav {
     color: white;
     padding: 8px 12px;
     border: none;
-    border-radius: 8px;
+    border-radius: 15px;
     text-decoration: none;
     margin: 5px;
     display:flex;
@@ -364,12 +364,12 @@ nav {
   }
   
   .save-buttonR {
-    background-color:  #FFD700;
+    background-color:  #EDC448;
     color: #fff;
     border: none;
     padding: 12px;
     font-size: 18px;
-    border-radius: 8px;
+    border-radius: 15px;
     cursor: pointer;
     transition: background-color 0.3s;
   }
@@ -521,6 +521,7 @@ nav {
   border-radius: 50%;
   margin-top: 45px;
   padding: 25px;
+  margin-bottom: 250px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -586,3 +587,108 @@ nav {
   font-weight: bold;
   cursor: pointer;
 }
+
+
+/* Estilos del cuestionario*/
+
+.emotion-quiz {
+  text-align: center;
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.quiz-container {
+  padding-bottom: 20px;
+  padding-top: 30px;
+}
+
+.question-card, .quiz-end {
+  display: none;
+  background-color: #FFF5E1;
+  padding: 35px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.question-card.active {
+  display: block;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.option {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ffedcc;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.option:hover {
+  background-color: #ffd1a3;
+}
+
+.quiz-end {
+  display: none;
+}
+
+.quiz-end.active {
+  display: block;
+}
+
+.quiz-end {
+  cursor: pointer;
+}
+
+.volver-empezar {
+  background-color: #EDC448;
+  color: #fff;
+  padding: 10px 15px;
+  margin: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+footer {
+  text-align: center;
+  padding: 0;
+  margin-top: 525px;
+  z-index: 1;    
+
+}
+
+.parrafo {
+  padding: 50px;
+  padding-top: 90px;
+}
+  
+  .social-icons{
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+  }
+
+
+  .social-icons {
+  margin: 10px 10px;
+  }
+
+  .social-icons  {
+   display: inline;
+  
+  }
