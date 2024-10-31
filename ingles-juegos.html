@@ -16,10 +16,12 @@
     </div>
         <nav>
             <ul class="nav-links">
+				<li><a href="index.html">Inicio</a></li>
                 <li><a href="emociones.html">Emociones</a></li>
                 <li><a href="experimentos.html">Experimentos</a></li>
                 <li><a href="Ingles.html">Aprende Inglés</a></li>
                 <li><a href="cuentos.html">Cuentos</a></li>
+				<button id="login-btn" class="btn-login">Iniciar Sesión</button>
             </ul>
         </nav>
     <img src="imagenes/elementos-gallardetes.png" alt="gallardetes" class="gallardetes">
@@ -73,6 +75,47 @@
 	<br>
     <br>
     <br>
+     <!-- Modal de Inicio de Sesión -->
+	 <div id="login-modal" class="modal">
+		<div class="modal-content">
+		  <span class="close-btn" id="close-login">&times;</span>
+		  <form id="login-form">
+			<h2>Inicia Sesión</h2>
+			<label for="login-email">Correo:</label>
+			<input type="email" id="login-email" name="email" required>
+	
+			<label for="login-password">Contraseña:</label>
+			<input type="password" id="login-password" name="password" required>
+	
+			<button type="submit" class="btn-submit">Ingresar</button>
+			<p>¿No tienes cuenta? <a href="#" id="open-register">Regístrate aquí</a></p>
+		  </form>
+		</div>
+	  </div>
+	
+	  <!-- Modal de Registro -->
+	  <div id="register-modal" class="modal hidden">
+		<div class="modal-content">
+		  <span class="close-btn" id="close-register">&times;</span>
+		  <form id="register-form">
+			<h2>Regístrate</h2>
+			<label for="register-name">Nombre:</label>
+			<input type="text" id="register-name" name="name" required>
+	
+			<label for="register-email">Correo:</label>
+			<input type="email" id="register-email" name="email" required>
+	
+			<label for="register-password">Contraseña:</label>
+			<input type="password" id="register-password" name="password" required>
+	
+			<button type="submit" class="btn-submit">Crear Cuenta</button>
+			<p>¿Ya tienes cuenta? <a href="#" id="open-login">Inicia sesión aquí</a></p>
+		  </form>
+		</div>
+	  </div>
+	  
+	  <script src="assets/js/inicio-sesion.js"></script>
+
         <footer>
             <div class="footer-content">
             <p>Contacto: HappyKids@gmail.com</p>

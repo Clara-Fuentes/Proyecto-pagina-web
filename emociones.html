@@ -1,108 +1,173 @@
-<!--Código de Mabelline-->
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/stilos-emociones.css">
     <title>Happy Kids Emociones</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gorditas:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header id="main-header">
         <div class="logo">
-            <img src="img/LOGO 1.png" alt="logoo">
+        <img src="imagenes/LOGO SOLO.png" alt="Happy Kids Logo" class="logo">
         </div>
-        <nav>
-            <ul>
-                <li><a href="emociones.html"">Emociones</a></li>
-                <li><a href="experimentos.html">Experimetos</a></li>
-                <li><a href="Ingles.html">Aprende Ingles</a></li>
-                <li><a href="cuentos.html">Cuentos</a></li>
-            </ul>
-            <div class="gallardete">
-                <img src="img/Recurso gallardete.png" alt="logoo">
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="emociones.html">Emociones</a></li>
+                    <li><a href="experimentos.html">Experimentos</a></li>
+                    <li><a href="Ingles.html">Aprende Inglés</a></li>
+                    <li><a href="cuentos.html">Cuentos</a></li>
+                    <button id="login-btn" class="btn-login">Iniciar Sesión</button>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-        </nav>
-    </header>
+        <img src="imagenes/elementos-gallardetes.png" alt="gallardetes" class="gallardetes">
+        </header>
+        <div class="intro-section" style="background-image: url( 'imagenes/Background-04.png'); height: 300px; background-size: cover;">
 
-<div>
-
-    <h2>Vamos a aprender de las emociones</h2>
-    <h3>Primero: ¿Qué color es cada emoción para ti ?</h3>
-   
-
-    <div class="gallery">
-        <div class="image-container">
-            <img src="img/furia.jpg" alt="furia">
-            <div class="button-container">
-                <button> <a href="angry.pdf " target=_blank>Imprimir</button>
-                <button><a href="https://www.supercoloring.com/es/node/398996?colore=online"colorear target="_blank" >Colorear Online </button>
-
-            </div>
-        </div>
-
-        <div class="image-container">
-            <img src="img/digus.jfif" alt="desagrado">
-            <div class="button-container">
-                <button> <a href="disgust.pdf " target=_blank>Imprimir</button>
-                <button><a href="https://www.supercoloring.com/es/node/398996?colore=online"colorear target="_blank" >Colorear Online </button>
-            </div>
-        </div>
-
-
-        <div class="image-container">
-            <img src="img/fear.jfif" alt="temor">
-            <div class="button-container">
-                <button> <a href="fear.pdf " target=_blank>Imprimir</button>
-                <button><a href="https://www.supercoloring.com/es/node/398992?colore=online"colorear target="_blank" >Colorear Online </button>
-            </div>
-        </div>
-
-        <div class="image-container">
-            <img src="img/alegria.jfif" alt="alegria">
-            <div class="button-container">
-                <button> <a href="joy.pdf " target=_blank>Imprimir</button>
-                <button><a href="https://www.supercoloring.com/es/node/398990?colore=online"colorear target="_blank" >Colorear Online </button>
-            </div>
-        </div>
-        <div class="image-container">
-            <img src="img/tristeza.jfif" alt="tristeza">
-            <div class="button-container">
-                <button> <a href="sad.pdf " target=_blank>Imprimir</button>
-                <button><a href="https://www.supercoloring.com/es/node/398994?colore=online"colorear target="_blank" >Colorear Online </button></a>
-
-
-            </div>
-        </div>
-    </div>
     
- <h2>¿Que son las emociones para ti?</h2>
- <div class="cuadro">
-    <textarea placeholder="Escribe tu respuesta aquí"></textarea>
-    <button onclick="guardarRespuesta()" class="save-button">Guardar Respuesta</button>
-</div>
+    <main class="content">
+    
+        <div class= "intro-emociones">
+        <h2>Vamos a aprender de las emociones</h2>
+        <p>¿Qué color es cada emoción para ti?</p>
+        </div>
 
-  <h3> En este video aprenderemos la importancia de las emociones, cuáles son las emociones básicas, para que nos sirven y cómo nuestro cuerpo las interpreta y reacciona ante ellas.</h3>
+        <section class="emotion-gallery">
+        
+            <div class="card">
+                <h3>Furia</h3>
+                <img src="img/furia.jpg" alt="Furia">
+                <div class="buttons">
+                    <a href="angry.pdf" target="_blank" class="btn">Imprimir</a>
+                    <a href="https://www.supercoloring.com/es/node/398996?colore=online" target="_blank" class="btn">Colorear</a>
+                </div>
+            </div>
 
- <iframe width="560" height="315" src="https://www.youtube.com/embed/__NmMOkND8g?si=Bjz1QFBRFoL8nkzi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-<h3>Da click Conoce tus emociones con Intensamente</h3>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/HQg3UrS1Vbo?si=np4CasnmHAgx1R1c&amp;start=10" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-<h3>Diviertete Explorando Nuevas Emociones</h3>
-<iframe style="max-width:100%" src="https://wordwall.net/es/embed/c1f839673c3e46fc8852acd17551eaf2?themeId=1&templateId=46&fontStackId=0" width="500" height="380" frameborder="0" allowfullscreen></iframe>
-<h3>Juego de Tablero de la Rueda de las Emociones</h3>
-<iframe style="max-width:100%" src="https://wordwall.net/es/embed/9310ee0d421c487180a56b9d65100d15?themeId=1&templateId=8&fontStackId=0" width="500" height="380" frameborder="0" allowfullscreen></iframe>
+            <div class="card">
+                <h3>Desagrado</h3>
+                <img src="img/digus.jfif" alt="Desagrado">
+                <div class="buttons">
+                    <a href="disgust.pdf" target="_blank" class="btn">Imprimir</a>
+                    <a href="https://www.supercoloring.com/es/node/398996?colore=online" target="_blank" class="btn">Colorear</a>
+                </div>
+            </div>
 
-<h3>¿Qué hacer con tus emociones cuando son muy grandes?</h3>
+            <div class="card">
+                <h3>Temor</h3>
+                <img src="img/fear.jfif" alt="Temor">
+                <div class="buttons">
+                    <a href="fear.pdf" target="_blank" class="btn">Imprimir</a>
+                    <a href="https://www.supercoloring.com/es/node/398992?colore=online" target="_blank" class="btn">Colorear</a>
+                </div>
+            </div>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/sANBOktr70c?si=4pQhU40CchWDLrrr&amp;start=3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="card">
+                <h3>Alegría</h3>
+                <img src="img/alegria.jfif" alt="Alegría">
+                <div class="buttons">
+                    <a href="joy.pdf" target="_blank" class="btn">Imprimir</a>
+                    <a href="https://www.supercoloring.com/es/node/398990?colore=online" target="_blank" class="btn">Colorear</a>
+                </div>
+            </div>
 
-<h3>Completar la siguiente sopa de letras. </h3>
-<h3>Indicaciones: </h3>
-<p>Da click en el <a href="img/sopa de letras.jpg" target="_blank" >enlace</a>
-, Imprime   y completa la siguiente sopa de letras .</p>
-<img class="sopadeletras" src="img/sopa de letras.jpg"> </a>
+            <div class="card">
+                <h3>Tristeza</h3>
+                <img src="img/tristeza.jfif" alt="Tristeza">
+                <div class="buttons">
+                    <a href="sad.pdf" target="_blank" class="btn">Imprimir</a>
+                    <a href="https://www.supercoloring.com/es/node/398994?colore=online" target="_blank" class="btn">Colorear</a>
+                </div>
+            </div>
+        </section>
+
+    
+        <section class="emotion-feedback">
+            <h2>¿Qué son las emociones para ti?</h2>
+            <div class="text-box">
+              <textarea class="emotion-inputR" placeholder="Escribe aquí tu respuesta..."></textarea>
+              <button class="save-buttonR">Guarda tu respuesta</button>
+            </div>
+            <p id="confirmationMessageR" class="hiddenR">¡Gracias por compartir tus emociones!</p>
+          </section>
+
+          
+          <div class="background-videos" style="background-image: url( 'imagenes/Background2-02-02.png'); height: 700px; background-size: cover;">
+
+          <section class="emotion-videos">
+
+            <h2>¿Por qué son importantes las emociones?</h2>
+            <p>Explora con estos videos cómo las emociones nos ayudan a entendernos y sentirnos mejor.</p>
+          
+            <div class="video-container">
+              <div class="video-card" data-video-src="https://www.youtube.com/embed/__NmMOkND8g?si=Bjz1QFBRFoL8nkzi">
+                <h4>¿Cómo puedo conocer mis emociones?</h4>
+                <img src="imagenes/moustro-colores.jpg" alt="Miniatura del Video 1">
+                <button class="play-button">▶ Ver Video</button>
+              </div>
+          
+              <div class="video-card" data-video-src="https://www.youtube.com/embed/HQg3UrS1Vbo?si=np4CasnmHAgx1R1c&amp;start=10">
+                <h4>Conoce tus emociones con Intensamente.</h4>
+                <img src="imagenes/intensamente.jpg" alt="Miniatura del Video 2">
+                <button class="play-button">▶ Ver Video</button>
+              </div>
+          
+              <div class="video-card" data-video-src="https://www.youtube.com/embed/sANBOktr70c?si=4pQhU40CchWDLrrr&amp;start=3">
+                <h4>¿Qué hacer con tus emociones cuando son muy grandes?</h4>
+                <img src="imagenes/doctor-emociones.jpg" alt="Miniatura del Video 3">
+                <button class="play-button">▶ Ver Video</button>
+              </div>
+            </div>
+        </div>
+          
+            <!-- Modal de video -->
+            <div id="videoModal" class="video-modal hidden">
+              <span class="video-close">&times;</span>
+              <iframe id="modalIframe" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </section>
 
 
+
+    <div class="background-niños" style="background-image: url( 'imagenes/Background-niños-04.png'); height: 600px; background-size: cover;">
+
+    
+        <section class="emotion-games">
+        <h2>¡Diviértete explorando tus emociones!</h2>
+        <p>Estos juegos te ayudarán a descubrir cómo te sientes y a entender mejor tus emociones.</p>
+      
+        <div class="bubble-container">
+          <div class="game-bubble" data-game-src="https://wordwall.net/es/embed/c1f839673c3e46fc8852acd17551eaf2?themeId=1&templateId=46&fontStackId=0">
+            <div class="bubble-content">
+              <img src="imagenes/bombillo.png" alt="Icono de Juego 1">
+              <h4>Juega y elije la opción correcta.</h4>
+              <button class="play-game-button">¡Jugar ahora!</button>
+            </div>
+          </div>
+      
+          <div class="game-bubble" data-game-src="https://wordwall.net/es/embed/9310ee0d421c487180a56b9d65100d15?themeId=1&templateId=8&fontStackId=0">
+            <div class="bubble-content">
+              <img src="imagenes/confeti.png" alt="Icono de Juego 2">
+              <h4>Jira la rueda de las emociones.</h4>
+              <button class="play-game-button">¡Jugar ahora!</button>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Modal para el juego -->
+        <div id="gameModal" class="game-modal hidden">
+          <span id="gameClose" class="game-close">&times;</span>
+          <iframe id="modalGameIframe" src="" frameborder="0" allow="autoplay; fullscreen"></iframe>
+        </div>
+      </section>
 
 
     <h2>Mini Cuestionario</h2>
@@ -136,8 +201,54 @@
 <!-- archivo JavaScript -->
     <script src="index.js"></script>
 
+    </main>
 
-</body>
+
+             <!-- Modal de Inicio de Sesión -->
+  <div id="login-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" id="close-login">&times;</span>
+      <form id="login-form">
+        <h2>Inicia Sesión</h2>
+        <label for="login-email">Correo:</label>
+        <input type="email" id="login-email" name="email" required>
+
+        <label for="login-password">Contraseña:</label>
+        <input type="password" id="login-password" name="password" required>
+
+        <button type="submit" class="btn-submit">Ingresar</button>
+        <p>¿No tienes cuenta? <a href="#" id="open-register">Regístrate aquí</a></p>
+      </form>
+    </div>
+  </div>
+
+  <!-- Modal de Registro -->
+  <div id="register-modal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close-btn" id="close-register">&times;</span>
+      <form id="register-form">
+        <h2>Regístrate</h2>
+        <label for="register-name">Nombre:</label>
+        <input type="text" id="register-name" name="name" required>
+
+        <label for="register-email">Correo:</label>
+        <input type="email" id="register-email" name="email" required>
+
+        <label for="register-password">Contraseña:</label>
+        <input type="password" id="register-password" name="password" required>
+
+        <button type="submit" class="btn-submit">Crear Cuenta</button>
+        <p>¿Ya tienes cuenta? <a href="#" id="open-login">Inicia sesión aquí</a></p>
+      </form>
+    </div>
+  </div>
+
+  <script src="assets/js/Envio-emociones.js"></script>
+  <script src="assets/js/inicio-sesion.js"></script>
+  <script src="assets/js/videos-emociones.js"></script>
+  <script src="assets/js/juegos-emociones.js"></script>
+
+
 <footer>
     
     <div class="parrafo">
@@ -149,5 +260,5 @@
 
    
 </footer>  
-
+</body> 
 </html>
