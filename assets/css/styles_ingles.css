@@ -76,6 +76,301 @@ nav {
     height: auto;
     z-index: 10;
     transition: width 0.3s ease-in-out;
+    animation: float 3s infinite ease-in-out;
+}
+
+ /* Animación flotante para decoración */
+ @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+/* Estilos para el Modal de Bienvenida */
+.welcome-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .custom-hidden {
+    display: none;
+  }
+  
+  .welcome-modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 80%;
+    max-width: 400px;
+  }
+  
+  .welcome-modal-content h2 {
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .welcome-modal-content p {
+    margin-bottom: 20px;
+  }
+  
+  #startBtn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #startBtn:hover {
+    background-color: #0056b3;
+  }
+  
+  
+  /* Estilos de la sección de Temas de Inglés */
+.english-topics {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 2em;
+    color: #4CAF50;
+    margin-bottom: 10px;
+    font-family: 'Gorditas', sans-serif;
+  }
+  
+  .section-description {
+    color: #555;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+  }
+  
+  .topics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 20px;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 900px;
+  }
+  
+  .topic-card {
+    background:  #fff7ef;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .topic-card:hover {
+    transform: translateY(-5px);
+    background-color:  #FFF5E1 ;
+  }
+  
+  .topic-card img {
+    width: 65px;
+    height: 65px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+  }
+  
+  .topic-card h3 {
+    font-size: 1.1em;
+    color: #ff6f61;
+  }
+  
+  .topic-card p {
+    font-size: 0.9em;
+    color: #333;
+  }
+  
+  /* Estilos del Modal de Video */
+  .video-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .custom-hidden-temas {
+    display: none;
+  }
+  
+  .video-content {
+    position: relative;
+    width: 90%;
+    max-width: 600px;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .close-btn-temas {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  /* Estilos de la Sección de Juegos */
+  .juegoParejas {
+    
+    margin-left: 500px;
+    align-items: center;
+    align-content: center;
+    margin-top: 90px;
+  }
+  
+  .parejas-game-container {
+    width: 80%;
+    max-width: 500px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    align-content: center;
+}
+
+.parejas-card {
+    background-color: #ffebcd;
+    padding: 20px;
+    font-size: 1.5em;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+}
+
+.parejas-card:hover {
+    transform: scale(1.05);
+}
+
+.parejas-card.flipped {
+    background-color: #FFF5E1;
+}
+
+.parejas-card.matched {
+    background-color: #FFD700;
+    pointer-events: none;
+}
+
+.parejas-restart-button {
+    margin-top: 20px;
+    margin-left: 175px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #ff7f50;
+    border: none;
+    border-radius: 18px;
+    cursor: pointer;
+    align-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.parejas-restart-button:hover {
+    background-color: #FFD700;
+}
+  
+  
+  /* Estilos para la Prueba de Conocimientos */
+
+  .quiz-ingles{
+    margin-left: 500px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  
+  .pantalla-oculta {
+    display: none;
+}
+
+#inicio-quiz, #pantalla-quiz, #pantalla-resultado {
+    text-align: center;
+    background-color: #fff7ef;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+}
+
+h2 {
+    color: #333;
+}
+p {
+    padding: 10px;
+}
+
+.opciones {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn-opcion {
+    background-color: #FFF5E1;
+    padding: 10px;
+    font-size: 16px;
+    color: #555;
+    border: none;
+    border-radius: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#boton-inicio, #boton-reintentar {
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #FFD700;
+    border: none;
+    border-radius: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-opcion:hover, #boton-inicio:hover, #boton-reintentar:hover {
+    background-color: #FFD700;
+}
+
+#mensaje-resultado {
+    font-size: 18px;
+    color: #333;
 }
 
  /* Estilo de inicio de Sesión  */
@@ -230,12 +525,12 @@ iframe {
 
 .descriptor {
     color: #EF811B;
-    font-family: "Bobby Jones Soft", fantasy; 
+    font-family: "Poppins", sans-serif; 
 }
 
 .h1-iv1{
     color: #68ACDD;
-    font-family: "Bobby Jones Soft", fantasy;
+    font-family: "Poppins", sans-serif;
 }
 
 footer {
@@ -244,6 +539,11 @@ footer {
     position: relative;
     z-index: 1;    
 
+}
+
+footer .parrafo {
+padding: 90px;
+padding-bottom: 15px;
 }
     
     .social-icons{

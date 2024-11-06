@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/styles_ingles.css">
-    <title>Happy Kids - Aprende Ingles Jugando</title>
+    <title> Happy Kids - Aprende Inglés </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gorditas:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="contenedor">
@@ -25,29 +28,161 @@
         </nav>
     <img src="imagenes/elementos-gallardetes.png" alt="gallardetes" class="gallardetes">
     </header>
-    <div class="principal">
-    <h1 class="h1-1">Aprende Ingles Jugando</h1>
-        <div>
-            <img src="./img/LOGO 2.png" alt="logo de Happy_kids">
-            <h1 class="h1-2">Selecciona la forma en la que quieres aprender Ingles con nosotros</h1>
+
+        <main>
+
+             <!-- Modal de Bienvenida -->
+            <div class="welcome-modal custom-hidden">
+              <div class="welcome-modal-content">
+                <h2>Bienvenidos a Happy Kids</h2>
+                <p>¡Diviértete y aprende con nosotros!</p>
+                <button id="startBtn">Comenzar</button>
+              </div>
+            </div>
+
+            <!--Sección de temas de inglés-->
+        
+            <section class="english-topics" style="background-image: url( 'imagenes/Background-inglés-02.png'); height: 950px; background-size: cover;">
+                <h2 class="section-title">¡Aprendamos Inglés Juntos!</h2>
+                <p class="section-description">Explora diferentes temas y aprende de manera divertida. Haz clic en cualquier tema para comenzar a ver el video.</p>
+                
+                <div class="topics-grid">
+                  <!--  Tarjetas de Video -->
+                       <!--  Tarjetas 1 -->
+                     <div class="topic-card" data-video="https://www.youtube.com/embed/2o46gKeQTwc?si=V3cojzc8nPvMX36g">
+                       <img src="imagenes/saludar-icon.png" alt="Saludos en Inglés">
+                       <h2>Saludos</h2>
+                       <p>¡Acompáñanos y aprende cómo saludar en inglés!</p>
+                     </div>
+                     <!--  Tarjetas 2 -->
+                     <div class="topic-card" data-video="https://www.youtube.com/embed/jlC2l0kqocE?si=iJpImChInEawCwYz">
+                       <img src="imagenes/numeros-icon.png" alt="Números en Inglés">
+                       <h2>Números</h2>
+                       <p>Aprende los números del 1 al 100 con Amigo Mumu.</p>
+                     </div>
+                     <!--  Tarjetas 3 -->
+                     <div class="topic-card" data-video="https://www.youtube.com/embed/2n7CXoRMsG4?si=fJDSKhEHgG2_KwqJ">
+                       <img src="imagenes/colores-icon.png" alt="Colores en Inglés">
+                       <h2>Colores</h2>
+                       <p>Acompañanos y aprendamos los colores en Inglés.</p>
+                     </div>
+
+                      <!--  Tarjetas 4 -->
+                      <div class="topic-card" data-video="https://www.youtube.com/embed/W_LhyqgaRJI?si=2uzqGGetIWaUzVEd ">
+                        <img src="imagenes/abecedario-icon.png" alt="El abecedario">
+                        <h2>El Abecedario</h2>
+                        <p>Conozcamos todas las letras del abecedario juntos.</p>
+                      </div>
+
+                       <!--  Tarjetas 5 -->
+                     <div class="topic-card" data-video="https://www.youtube.com/embed/WisKxClrWP4?si=pmnywybYoyVHJf03">
+                        <img src="imagenes/semana-icon.png" alt="Días de la semana">
+                        <h2>Días de la semana</h2>
+                        <p>¿Y si aprendemos cómo se dicen los días de la semana en Inglés?</p>
+                      </div>
+
+
+                       <!--  Tarjetas 6 -->
+                     <div class="topic-card" data-video="https://www.youtube.com/embed/TZ6eC2EMstQ?si=2zGxXyD1Jlkqe-_B">
+                        <img src="imagenes/familia-icon.png" alt="Miembros de la familia">
+                        <h2>Mi familia</h2>
+                        <p>¿Te gustaría saber cómo nombrar a tu familia en Inglés?</p>
+                      </div>
+
+                       <!--  Tarjetas 7 -->
+                     <div class="topic-card" data-video="https://www.youtube.com/embed/GWElwZGZaLo?si=n36ktzkKAN2CBUn7">
+                        <img src="imagenes/verduras-icon.png" alt="Comida">
+                        <h2>Comida</h2>
+                        <p>Conocé tu comida favorita en inglés.</p>
+                      </div>
+
+                       <!--  Tarjetas 8 -->
+                     <div class="topic-card" data-video="https://www.youtube.com/embed/5IUhK5jGN5E?si=ZA6USLV7-EpWDAhW">
+                        <img src="imagenes/ropa-icon.png" alt="Prendas de vestir">
+                        <h2>Prendas de vestir</h2>
+                        <p>Ahora aprendamos juntos a decir nuestras prendas de vestir.</p>
+                      </div>
+
+
+                     <!--  Tarjetas 9 -->
+                     <div class="topic-card" data-video="https://www.youtube.com/embed/aT9CKFC9D2c?si=7S4nO_b9i3dT5P4J">
+                        <img src="imagenes/emociones-icon.png" alt="Emociones">
+                        <h2>Emociones</h2>
+                        <p>¿Sabes cómo se dice feliz o triste en Inglés?.</p>
+                      </div>
+
+                       <!--  Tarjetas 10 -->
+                     <div class="topic-card" data-video="https://www.youtube.com/embed/zIx-2a6KEOo?si=vNNe4tWqXpaDSp63">
+                        <img src="imagenes/comida-icon.png" alt="Frutas">
+                        <h2>Frutas</h2>
+                        <p>Hoy vi una manzana en la tienda, aprendamos sobre las frutas.</p>
+                      </div>
+
+                       <!--  Tarjetas 11 -->
+                     <div class="topic-card" data-video="https://www.youtube.com/embed/KRyK79yP0oA?si=UbiBCDPmUyGH02cf">
+                        <img src="imagenes/ToBe-Icon.png" alt="Verbo To Be">
+                        <h2>Verbo To Be</h2>
+                        <p>Veamos juntos cómo utilizar el verbo To Be.</p>
+                      </div>
+
+                       <!--  Tarjetas 12 -->
+                     <div class="topic-card" data-video="https://www.youtube.com/embed/D0RgdfHXFKE?si=i7SpUBv7UGyp_nwa">
+                        <img src="imagenes/pronombres-icon.png" alt="Pronombres">
+                        <h2>Pronombres</h2>
+                        <p>Conozcamos juntos los pronombres.</p>
+                      </div>
+                  
+                </div>
+                       
+
+                <!-- Modal para mostrar los videos -->
+                <div class="video-modal custom-hidden-temas" id="videoModal" aria-hidden="true" role="dialog">
+                  <div class="video-content">
+                    <button class="close-btn-temas" id="closeModalTemas" aria-label="Cerrar modal">X</button>
+                    <iframe id="videoPlayer" width="560" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </section>
+        
+            <!-- Sección de Juegos -->
+        <div class="juegoParejas">
+            <div class="parejas-game-container" id="parejasGameContainer">
+                <!-- Tarjetas generadas dinámicamente por JavaScript -->
+            </div>
+
+            <button class="parejas-restart-button" onclick="parejasReiniciarJuego()">Reiniciar Juego</button>
+
         </div>
-        </div>
-    <div class="contenedor">
-        <center><table>
-            <tr>
-                <td style="width: 400px;"><a href="./ingles-videos.html">
-                <img src="./img/ytkids.png" alt="logo de videos" class="videos" align="center"></a>
-                <p class="p1">Aprendamos Inglés juntos viendo videos</p></td>
-                <td style="width: 50px;"></td>
-                <td><a href="./ingles-juegos.html">
-                <img src="./img/juegos2.png" alt="videojuegos" class="juegos"></a>
-                <p class="p1">Profundicemos el Inglés con juegos</p></td>
-            </tr>
-        </table></center>
-    </div>
-    <br>
-    <br>
-    <br>
+        
+            <!-- Sección de Prueba de Conocimientos -->
+
+        <section class="quiz-ingles">  
+            <div id="inicio-quiz">
+
+                <h2>Prueba de Conocimientos</h2>
+                <p>Responde las siguientes preguntas:</p>
+                <button id="boton-inicio">Iniciar Prueba</button>
+            </div>
+        
+            <div id="pantalla-quiz" class="pantalla-oculta">
+                <h2 id="texto-pregunta"></h2>
+                <div class="opciones">
+                    <button class="btn-opcion" onclick="verificarRespuesta(0)"></button>
+                    <button class="btn-opcion" onclick="verificarRespuesta(1)"></button>
+                    <button class="btn-opcion" onclick="verificarRespuesta(2)"></button>
+                    <button class="btn-opcion" onclick="verificarRespuesta(3)"></button>
+                </div>
+            </div>
+        
+            <div id="pantalla-resultado" class="pantalla-oculta">
+                <p id="mensaje-resultado"></p>
+                <button id="boton-reintentar">Reintentar</button>
+            </div>
+
+        </section>
+          
+        </main>
+
 
                        <!-- Modal de Inicio de Sesión -->
         <div id="login-modal" class="modal">
@@ -89,18 +224,23 @@
         </div>
 
         <script src="assets/js/inicio-sesion.js"></script>
+        <script src="assets/js/temas-ingles.js"></script>
+        <script src="assets/js/juegos-ingles.js"></script>
+        <script src="assets/js/Quiz-ingles.js"></script>
 
-    <footer>
-        <div class="footer-content">
-        <p>Contacto: HappyKids@gmail.com</p>
-        <p>&copy; 2024 Happy Kids, Todos los derechos reservados.</p>
-        <p>Siguenos en redes sociales. </p>
-        <div class="social-icons">
-            <a href="#"><img src="imagenes/Icon Facebook.png" alt="Facebook" width="15px"></a>
-            <a href="#"><img src="imagenes/Icon Instagram.png" alt="Instagram" width="29px"></a>
-        </div>
-        </div>
-    </footer> 
+        <footer>
+            <div class="footer-content" style="background-image: url( 'imagenes/Background-footer-03.png'); height: 300px; background-size: cover;">
+            <div class="parrafo">
+            <p>Contacto: HappyKids@gmail.com</p>
+            <p>&copy; 2024 Happy Kids, Todos los derechos reservados.</p>
+            <p>Siguenos en redes sociales. </p>
+            </div>
+            <div class="social-icons">
+                <a href="https://es-es.facebook.com/"><img src="imagenes/Icon Facebook.png" alt="Facebook" width="15px"></a>
+                <a href="https://www.instagram.com/"><img src="imagenes/Icon Instagram.png" alt="Instagram" width="29px"></a>
+            </div>
+           
+        </footer>  
 </div>
 </body>
 </html>
